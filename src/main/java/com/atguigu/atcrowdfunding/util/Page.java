@@ -7,13 +7,13 @@ import java.util.List;
  * @Date 2019/1/17 14:51
  * @Version 1.0
  **/
-public class Page {
+public class Page<T> {
 
     private Integer pageno;
 
     private Integer pagesize;
 
-    private List datas;
+    private List<T> data;
 
     private Integer totalsize;
 
@@ -48,12 +48,12 @@ public class Page {
         this.pagesize = pagesize;
     }
 
-    public List getDatas() {
-        return datas;
+    public List<T> getData() {
+        return data;
     }
 
-    public void setDatas(List datas) {
-        this.datas = datas;
+    public void setData(List<T> data) {
+        this.data = data;
     }
 
     public Integer getTotalsize() {
